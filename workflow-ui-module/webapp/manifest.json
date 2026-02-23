@@ -1,0 +1,221 @@
+{
+    "_version": "1.26.0",
+    "sap.app": {
+        "id": "Loans.workflowuimodule",
+        "type": "application",
+        "i18n": "i18n/i18n.properties",
+        "applicationVersion": {
+            "version": "0.0.1"
+        },
+        "title": "{{appTitle}}",
+        "description": "{{appDescription}}",
+        "resources": "resources.json",
+        "sourceTemplate": {
+            "id": "@sap/generator-fiori:basic",
+            "version": "1.8.4",
+            "toolsId": "7ded3358-d16e-4df4-83c3-4f2e8580b075"
+        },
+        "dataSources": {
+            "mainService": {
+                "uri": "/sap/opu/odata/",
+                "type": "OData",
+                "settings": {
+                    "annotations": [],
+                    "localUri": "localService/metadata.xml",
+                    "odataVersion": "2.0"
+                }
+            }
+        }
+    },
+    "sap.ui": {
+        "technology": "UI5",
+        "icons": {
+            "icon": "",
+            "favIcon": "",
+            "phone": "",
+            "phone@2": "",
+            "tablet": "",
+            "tablet@2": ""
+        },
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": true
+        }
+    },
+    "sap.ui5": {
+        "flexEnabled": true,
+        "dependencies": {
+            "minUI5Version": "1.82.2",
+            "libs": {
+                "sap.m": {},
+                "sap.ui.core": {},
+                "sap.f": {},
+                "sap.suite.ui.generic.template": {},
+                "sap.ui.comp": {},
+                "sap.ui.generic.app": {},
+                "sap.ui.table": {},
+                "sap.ushell": {}
+            }
+        },
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        },
+        "models": {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "settings": {
+                    "bundleName": "Loans.workflowuimodule.i18n.i18n"
+                }
+            },
+            "": {
+                "dataSource": "mainService",
+                "preload": true,
+                "settings": {}
+            }
+        },
+        "resources": {
+            "css": [
+                {
+                    "uri": "css/style.css"
+                }
+            ]
+        },
+        "routing": {
+            "config": {
+                "routerClass": "sap.m.routing.Router",
+                "viewType": "XML",
+                "async": true,
+                "viewPath": "Loans.workflowuimodule.view",
+                "controlAggregation": "pages",
+                "controlId": "app",
+                "clearControlAggregation": false
+            },
+            "routes": [
+                {
+                    "name": "RouteMyTaskUI",
+                    "pattern": ":?query:",
+                    "target": [
+                        "TargetMyTaskUI"
+                    ]
+                }
+            ],
+            "targets": {
+                "TargetMyTaskUI": {
+                    "viewType": "XML",
+                    "transition": "slide",
+                    "clearControlAggregation": false,
+                    "viewId": "MyTaskUI",
+                    "viewName": "MyTaskUI"
+                }
+            }
+        },
+        "rootView": {
+            "viewName": "Loans.workflowuimodule.view.App",
+            "type": "XML",
+            "async": true,
+            "id": "App"
+        }
+    },
+    "sap.cloud": {
+        "public": true,
+        "service": "Lo"
+    },
+    "sap.bpa.task": {
+  "_version": "1.0.0",
+  "category": "approval",
+  "outcomes": [
+    { "id": "approve", "label": "Approve" },
+    { "id": "reject", "label": "Reject" }
+  ],
+  "inputs": {
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "title": "Partner & Incoming Payment Details",
+    "type": "object",
+    "required": ["partners"],
+    "properties": {
+      "partners": {
+        "type": "array",
+        "title": "Partners",
+        "items": {
+          "type": "object",
+          "required": [
+            "partnerNumber",
+            "partnerName"
+          ],
+          "properties": {
+ 
+ 
+            "bpRoleNumber": {
+              "type": "string",
+              "title": "BP Role No."
+            },
+            "roleName": {
+              "type": "string",
+              "title": "Role Name"
+            },
+            "partnerNumber": {
+              "type": "string",
+              "title": "Partner No."
+            },
+            "partnerName": {
+              "type": "string",
+              "title": "Partner Name"
+            },
+            "bankDetailsId": {
+              "type": "string",
+              "title": "Bank Details ID"
+            },
+            "startRelationshipDate": {
+              "type": "string",
+              "format": "date",
+              "title": "Start Rel."
+            },
+            "endRelationshipDate": {
+              "type": "string",
+              "format": "date",
+              "title": "End Rel."
+            },
+ 
+            "incomingPaymentMethod": {
+              "type": "string",
+              "title": "Incoming Payment Method"
+            },
+            "arBillingJob": {
+              "type": "string",
+              "title": "AR Billing Job"
+            },
+            "payoffLock": {
+              "type": "boolean",
+              "title": "Payoff Lock"
+            },
+            "excludeFromDunning": {
+              "type": "boolean",
+              "title": "Exclude from Dunning"
+            },
+            "indicator1098Relevant": {
+              "type": "boolean",
+              "title": "1098 Relevant"
+            }
+          }
+        }
+      }
+    }
+  },
+  "outputs": {
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "title": "Approval Result",
+    "type": "object",
+    "required": ["comment"],
+    "properties": {
+      "comment": {
+        "type": "string",
+        "title": "Approver Comment"
+      }
+    }
+  },
+  "category": "approval"
+}
+ 
+}
