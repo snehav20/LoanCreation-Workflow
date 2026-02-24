@@ -9,8 +9,8 @@
     xmlns="sap.m"
     xmlns:macros="sap.fe.macros"
     xmlns:upload="sap.m.upload"
-xmlns:plugins="sap.m.plugins"
- xmlns:table="sap.ui.table" 
+    xmlns:plugins="sap.m.plugins"
+    xmlns:table="sap.ui.table" 
     displayBlock="true" height="100%">
     <App id="app9">
          <Page id="_IDGenPage1" showHeader="false">
@@ -20,65 +20,60 @@ xmlns:plugins="sap.m.plugins"
                     useIconTabBar="true"
                     upperCaseAnchorBar="false"
                     sectionTitleVariant="Auto">
-                   
+
                     <uxap:headerTitle>
                         <uxap:ObjectPageDynamicHeaderTitle id="_IDGenObjectPageDynamicHeaderTitle">
                             <uxap:expandedHeading>
-                                <Title id="_IDGenTitle" text="Header Details" level="H2"/>
+                                <!-- <Title id="_IDGenTitle" text="Header Details" level="H2"/> -->
                             </uxap:expandedHeading>
                             <uxap:snappedHeading>
-                                <Title id="_IDGenTitle1" text="Header Details" level="H2"/>
+                                <!-- <Title id="_IDGenTitle1" text="Header Details" level="H2"/> -->
                             </uxap:snappedHeading>
                         </uxap:ObjectPageDynamicHeaderTitle>
                     </uxap:headerTitle>
+                   
 <uxap:headerContent>
-    <m:FlexBox id="_IDGenFlexBox" width="100%" wrap="Wrap" alignItems="Start" justifyContent="Start">
- 
-        <!-- Loan Number -->
-        <m:VBox id="_IDGenVBox1" width="18%">
+
+   <m:HBox id="_IDGenHBox2"
+    width="100%"
+    wrap="Wrap"
+    class="customHeaderRow">
+
+        <m:VBox id="_IDGenVBox">
             <m:Label id="_IDGenLabel" text="Loan Number" design="Bold"/>
-            <m:Text id="_IDGenText" text="LN-882299" />
+            <m:Text id="_IDGenText" text="LN-882299"/>
         </m:VBox>
- 
-        <!-- Status -->
-        <m:VBox id="_IDGenVBox2" width="18%">
+
+        <m:VBox id="_IDGenVBox1">
             <m:Label id="_IDGenLabel1" text="Status" design="Bold"/>
-            <m:Text id="_IDGenText1" text="Pre-Contract" />
+            <m:Text id="_IDGenText1" text="Pre-Contract"/>
         </m:VBox>
- 
-        <!-- Disbursement Status -->
-        <m:VBox id="_IDGenVBox3" width="18%">
+
+        <m:VBox id="_IDGenVBox2">
             <m:Label id="_IDGenLabel2" text="Disb. Status" design="Bold"/>
-            <m:Text id="_IDGenText2" text="Not Disbursed" />
+            <m:Text id="_IDGenText2" text="Not Disbursed"/>
         </m:VBox>
- 
-        <!-- Loan Partners Section -->
-        <m:VBox id="_IDGenVBox4" width="46%">
- 
-            <!-- Column Headings -->
-            <m:HBox id="_IDGenHBox2" justifyContent="Start">
-                <m:Label id="_IDGenLabel3" text="BP Number" width="120px" design="Bold"/>
-                <m:Label id="_IDGenLabel4" text="Role Name" width="180px" design="Bold"/>
-                <m:Label id="_IDGenLabel28" text="Partner Name" design="Bold"/>
-            </m:HBox>
- 
-            <!-- Row 1 -->
-            <m:HBox id="_IDGenHBox5">
-                <m:Text id="_IDGenText140" text="611502" width="120px"/>
-                <m:Text id="_IDGenText141" text="Loan Partner" width="180px"/>
-                <m:Text id="_IDGenText142" text="RKH Holdings LLC"/>
-            </m:HBox>
- 
-            <!-- Row 2 -->
-            <m:HBox id="_IDGenHBox6">
-                <m:Text id="_IDGenText150" text="600273" width="120px"/>
-                <m:Text id="_IDGenText151" text="Main Loan Partner" width="180px"/>
-                <m:Text id="_IDGenText152" text="Greater Johnstown Water Authority"/>
-            </m:HBox>
- 
+
+        <m:VBox id="_IDGenVBox3">
+            <m:Label id="_IDGenLabel3" text="BP Number" design="Bold"/>
+            <m:Text id="_IDGenText43" text="611502"/>
+            <m:Text id="_IDGenText53" text="600273"/>
         </m:VBox>
- 
-    </m:FlexBox>
+
+        <m:VBox id="_IDGenVBox4">
+            <m:Label id="_IDGenLabel4" text="Role Name" design="Bold"/>
+            <m:Text id="_IDGenText140" text="Loan Partner"/>
+            <m:Text id="_IDGenText141" text="Main Loan Partner"/>
+        </m:VBox>
+
+        <m:VBox id="_IDGenVBox30">
+            <m:Label id="_IDGenLabel22" text="Partner Name" design="Bold"/>
+            <m:Text id="_IDGenText142" text="RKH Holdings LLC"/>
+            <m:Text id="_IDGenText144" text="Greater Johnstown Water Authority"/>
+        </m:VBox>
+
+    </m:HBox>
+
 </uxap:headerContent>
  
 <uxap:sections>
@@ -89,30 +84,33 @@ xmlns:plugins="sap.m.plugins"
         <m:HBox id="_IDGenHBox44" wrap="Wrap" class="sectionFields">
  
             <m:VBox id="_IDGenVBox64" class="fieldBlock">
-                <m:Label id="_IDGenLabel225" text="Loan Program"/>
+                <m:Label id="_IDGenLabel225" text="Loan Program:"/>
                 <m:Input id="_IDGenInpu2t" value="1" editable="false"/>
             </m:VBox>
- 
-            <m:VBox id="_IDGenVBox27" class="fieldBlock">
-                <m:Label id="_IDGenLabel226" text="Designation"/>
-                <m:Input id="_IDGenInput21" value="1" editable="false"/>
-            </m:VBox>
- 
-            <m:VBox id="_IDGenVBo2x8" class="fieldBlock">
-                <m:Label id="_IDGenLabe2l7" text="Agency"/>
+
+             <m:VBox id="_IDGenVBo2x8" class="fieldBlock">
+                <m:Label id="_IDGenLabe2l7" text="Agency:"/>
                 <m:Input id="_IDGenInp2ut22" value="-" editable="false"/>
             </m:VBox>
- 
-            <m:VBox id="_IDGenVB2ox9" class="fieldBlock">
-                <m:Label id="_IDGenLabe22l8" text="Pledged Status"/>
-                <m:Input id="_IDGenInpu2t3" value="-" editable="false"/>
-            </m:VBox>
- 
+
+            
             <m:VBox id="_IDGenVB2ox10" class="fieldBlock">
-                <m:Label id="_IDG2enLabel9" text="Purpose of loan"/>
+                <m:Label id="_IDG2enLabel9" text="Purpose of loan:"/>
                 <m:Input id="_IDGenInput4" value="-" editable="false"/>
             </m:VBox>
  
+            <m:VBox id="_IDGenVBox27" class="fieldBlock">
+                <m:Label id="_IDGenLabel226" text="Designation:"/>
+                <m:Input id="_IDGenInput21" value="1" editable="false"/>
+            </m:VBox>
+ 
+           
+            <m:VBox id="_IDGenVB2ox9" class="fieldBlock">
+                <m:Label id="_IDGenLabe22l8" text="Pledged Status:"/>
+                <m:Input id="_IDGenInpu2t3" value="-" editable="false"/>
+            </m:VBox>
+ 
+            
         </m:HBox>
     </m:VBox>
 </uxap:ObjectPageSubSection>
@@ -123,22 +121,22 @@ xmlns:plugins="sap.m.plugins"
         <m:HBox id="_IDGenHBox21" wrap="Wrap" class="sectionFields">
  
             <m:VBox id="_IDGenVBox14" class="fieldBlock">
-                <m:Label id="_IDGenLabel10" text="Legacy Number"/>
+                <m:Label id="_IDGenLabel10" text="Legacy Number:"/>
                 <m:Input id="_IDGenInput5" value="Infrastructure Expansion" editable="false"/>
             </m:VBox>
  
             <m:VBox id="_IDGenVBox15" class="fieldBlock">
-                <m:Label id="_IDGenLabel12" text="Project Number"/>
+                <m:Label id="_IDGenLabel12" text="Project Number:"/>
                 <m:Input id="_IDGenInput6" value="Priority A" editable="false"/>
             </m:VBox>
  
             <m:VBox id="_IDGenVBox16" class="fieldBlock">
-                <m:Label id="_IDGenLabel13" text="County"/>
+                <m:Label id="_IDGenLabel13" text="County:"/>
                 <m:Input id="_IDGenInput7" value="Fully Pledged" editable="false"/>
             </m:VBox>
  
             <m:VBox id="_IDGenVBox18" class="fieldBlock">
-                <m:Label id="_IDGenLabel14" text="Primary Industry"/>
+                <m:Label id="_IDGenLabel14" text="Primary Industry:"/>
                 <m:Input id="_IDGenInput8" value="yes" editable="false"/>
             </m:VBox>
  
@@ -151,22 +149,22 @@ xmlns:plugins="sap.m.plugins"
         <m:HBox id="_IDGenHBox7" wrap="Wrap" class="sectionFields">
  
             <m:VBox id="_IDGenVBox20" class="fieldBlock">
-                <m:Label id="_IDGenLabel15" text="Application Capital"/>
+                <m:Label id="_IDGenLabel15" text="Application Capital:"/>
                 <m:Input id="_IDGenInput9" value="500,000.00" editable="false"/>
             </m:VBox>
  
             <m:VBox id="_IDGenVBox21" class="fieldBlock">
-                <m:Label id="_IDGenLabel16" text="Application Date"/>
+                <m:Label id="_IDGenLabel16" text="Application Date:"/>
                 <m:DatePicker id="_IDGenDatePicker" value="12/31/2026" displayFormat="MM/dd/yyyy" editable="false"/>
             </m:VBox>
  
             <m:VBox id="_IDGenVBox22" class="fieldBlock">
-                <m:Label id="_IDGenLabel17" text="Approval Date"/>
+                <m:Label id="_IDGenLabel17" text="Approval Date:"/>
                 <m:DatePicker id="_IDGenDatePicker1" value="12/31/2026" displayFormat="MM/dd/yyyy" editable="false"/>
             </m:VBox>
  
             <m:VBox id="_IDGenVBox23" class="fieldBlock">
-                <m:Label id="_IDGenLabel18" text="Commitment Date"/>
+                <m:Label id="_IDGenLabel18" text="Commitment Date:"/>
                 <m:DatePicker id="_IDGenDatePicker2" value="12/31/2026" displayFormat="MM/dd/yyyy" editable="false"/>
             </m:VBox>
  
@@ -178,27 +176,25 @@ xmlns:plugins="sap.m.plugins"
  <uxap:ObjectPageSubSection id="_IDGenObjectPageSubSection4" title="Offer/Accept" titleUppercase="false">
     <m:VBox id="_IDGenVBox24" class="sectionContainer">
  
-        <m:Title id="_IDGenTitle2" text="Offer" level="H6" class="sapUiSmallMarginBottom"/>
- 
         <m:HBox id="_IDGenHBox8" wrap="Wrap" class="sectionFields">
  
             <m:VBox id="_IDGenVBox25" class="fieldBlock">
-                <m:Label id="_IDGenLabel19" text="Offer On"/>
+                <m:Label id="_IDGenLabel19" text="Offer On:"/>
                 <m:DatePicker id="_IDGenDatePicker3" value="12/31/2026" displayFormat="MM/dd/yyyy" editable="false"/>
             </m:VBox>
  
             <m:VBox id="_IDGenVBox26" class="fieldBlock">
-                <m:Label id="_IDGenLabel20" text="Accepted On"/>
+                <m:Label id="_IDGenLabel20" text="Accepted On:"/>
                 <m:DatePicker id="_IDGenDatePicker4" value="12/31/2026" displayFormat="MM/dd/yyyy" editable="false"/>
             </m:VBox>
  
             <m:VBox id="_IDGenVBox267" class="fieldBlock">
-                <m:Label id="_IDGenLabel29" text="Loan Close Date"/>
+                <m:Label id="_IDGenLabel29" text="Loan Close Date:"/>
                 <m:DatePicker id="_IDGenDatePicker8" value="12/31/2026" displayFormat="MM/dd/yyyy" editable="false"/>
             </m:VBox>
  
             <m:VBox id="_IDGenVBox28" class="fieldBlock">
-                <m:Label id="_IDGenLabel31" text="Date Paid Off"/>
+                <m:Label id="_IDGenLabel31" text="Date Paid Off:"/>
                 <m:DatePicker id="_IDGenDatePicker11" value="12/31/2026" displayFormat="MM/dd/yyyy" editable="false"/>
             </m:VBox>
  
@@ -240,41 +236,41 @@ xmlns:plugins="sap.m.plugins"
         <m:HBox id="_IDGenHBox" wrap="Wrap">
  
             <m:VBox id="_IDGenVBox6">
-<m:Label id="_IDGenLabel5" text="Loan Begin Date"/>
+<m:Label id="_IDGenLabel5" text="Loan Begin Date:"/>
 <m:DatePicker id="_IDGenDatePicker5" value="12/31/2026"
                               displayFormat="MM/dd/yyyy"
                               editable="false"/>
 </m:VBox>
  
             <m:VBox id="_IDGenVBox7">
-<m:Label id="_IDGenLabel6" text="Loan Maturity Date"/>
+<m:Label id="_IDGenLabel6" text="Loan Maturity Date:"/>
 <m:DatePicker id="_IDGenDatePicker6" value="12/31/2026"
                               displayFormat="MM/dd/yyyy"
                               editable="false"/>
 </m:VBox>
  
             <m:VBox id="_IDGenVBox8">
-<m:Label id="_IDGenLabel7" text="Amortization Start"/>
+<m:Label id="_IDGenLabel7" text="Amortization Start:"/>
 <m:DatePicker id="_IDGenDatePicker7" value="12/31/2026"
                               displayFormat="MM/dd/yyyy"
                               editable="false"/>
 </m:VBox>
  
             <m:VBox id="_IDGenVBox9">
-<m:Label id="_IDGenLabel8" text="Amortization End"/>
+<m:Label id="_IDGenLabel8" text="Amortization End:"/>
 <m:DatePicker id="_IDGenDatePicker9" value="12/31/2026"
                               displayFormat="MM/dd/yyyy"
                               editable="false"/>
 </m:VBox>
  
             <m:VBox id="_IDGenVBox10">
-<m:Label id="_IDGenLabel9" text="Amortization Status"/>
+<m:Label id="_IDGenLabel9" text="Amortization Status:"/>
 <m:Input id="_IDGenInput" value="500,000.00"
                          editable="false"/>
 </m:VBox>
  
             <m:VBox id="_IDGenVBox29">
-<m:Label id="_IDGenLabel21" text="Contract Completed Date"/>
+<m:Label id="_IDGenLabel21" text="Contract Completed Date:"/>
 <m:DatePicker id="_IDGenDatePicker10" value="12/31/2026"
                               displayFormat="MM/dd/yyyy"
                               editable="false"/>
@@ -499,6 +495,18 @@ xmlns:plugins="sap.m.plugins"
                 <m:Column id="_IDGenColumn15" width="10rem">
                     <m:Text id="_IDGenText29" text="End Rel."/>
                 </m:Column>
+
+                 <m:Column id="_IDGenColumn115" width="10rem">
+                    <m:Text id="_IDGenText291" text="Address"/>
+                </m:Column>
+
+                 <m:Column id="_IDGenColumn415" width="10rem">
+                    <m:Text id="_IDGenText249" text="Customer No."/>
+                </m:Column>
+
+                 <m:Column id="_IDGenColumn155" width="10rem">
+                    <m:Text id="_IDGenText2977" text="Dunning Letter"/>
+                </m:Column>
             </m:columns>
 
             <m:items>
@@ -510,7 +518,10 @@ xmlns:plugins="sap.m.plugins"
                         <m:Text id="_IDGenText33" text="TechCorp Solutions" />
                         <m:Text id="_IDGenText34" text="01012026882299" />
                         <m:Text id="_IDGenText35" text="01/01/2026" />
-                        <m:Text id="_IDGenText36" text="12/31/2030" />
+                        <m:Text id="_IDGenText3116" text="12/31/2030" />
+                        <m:Text id="_IDGenText361" text="Hennur" />
+                        <m:Text id="_IDGenText316" text="GD123" />
+                        <m:Text id="_IDGenText36" text="Yes" />
                     </m:cells>
                 </m:ColumnListItem>
 
@@ -523,6 +534,9 @@ xmlns:plugins="sap.m.plugins"
                         <m:Text id="_IDGenText75" text="01012026882299" />
                         <m:Text id="_IDGenText76" text="02/15/2026" />
                         <m:Text id="_IDGenText143" text="12/31/2030" />
+                        <m:Text id="_IDGenText3611" text="Hebbal" />
+                        <m:Text id="_IDGenText31126" text="GD12263" />
+                        <m:Text id="_IDGenText326" text="No" />
                     </m:cells>
                 </m:ColumnListItem>
             </m:items>
@@ -572,7 +586,7 @@ xmlns:plugins="sap.m.plugins"
             <m:FlexBox id="_IDGenFlexBox12" wrap="NoWrap" alignItems="Center" justifyContent="Start" class="sapUiSmallMargin">
                 <m:items>
                     <m:VBox id="_IDGenVBox39" class="sapUiMediumMarginEnd">
-                        <m:Label id="_IDGenLabel38" text="Disbursement Oblig..:" />
+                        <m:Label id="_IDGenLabel38" text="Disbursement Oblig.:" />
                         <m:Input id="_IDGenInput15" value="450,000.00 USD" editable="false" width="15rem" />
                     </m:VBox>
                 </m:items>
@@ -596,16 +610,23 @@ xmlns:plugins="sap.m.plugins"
         <m:Table id="earmarkTable" sticky="ColumnHeaders">
 
             <m:columns>
-                <m:Column id="_IDGenColumn8" width="8rem"><m:Text id="_IDGenText37" text="Document Line"/></m:Column>
+                <m:Column id="_IDGenColumn8" width="12rem"><m:Text id="_IDGenText37" text="Document Line Number"/></m:Column>
                 <m:Column id="_IDGenColumn16" width="12rem"><m:Text id="_IDGenText38" text="Loan Category"/></m:Column>
                 <m:Column id="_IDGenColumn17" width="10rem"><m:Text id="_IDGenText39" text="Flow Type"/></m:Column>
                 <m:Column id="_IDGenColumn18" width="14rem"><m:Text id="_IDGenText40" text="Original Amount"/></m:Column>
                 <m:Column id="_IDGenColumn19" width="10rem"><m:Text id="_IDGenText41" text="Text"/></m:Column>
                 <m:Column id="_IDGenColumn20" width="16rem"><m:Text id="_IDGenText42" text="Completion Indicator"/></m:Column>
-                <m:Column id="_IDGenColumn21" width="14rem"><m:Text id="_IDGenText43" text="Account Coding"/></m:Column>
                 <m:Column id="_IDGenColumn22" width="10rem"><m:Text id="_IDGenText44" text="Fund"/></m:Column>
                 <m:Column id="_IDGenColumn23" width="10rem"><m:Text id="_IDGenText45" text="Budget Pd"/></m:Column>
                 <m:Column id="_IDGenColumn24" width="12rem"><m:Text id="_IDGenText46" text="GL Account"/></m:Column>
+                <m:Column id="_IDGenColumn224" width="12rem"><m:Text id="_IDGenText416" text="Cost Center"/></m:Column>
+                <m:Column id="_IDGenColumn2224" width="12rem"><m:Text id="_IDGenText436" text="Fund Center"/></m:Column>
+                <m:Column id="_IDGenColumn274" width="12rem"><m:Text id="_IDGenText486" text="Order"/></m:Column>
+                <m:Column id="_IDGenColumn244" width="12rem"><m:Text id="_IDGenText426" text="Functional Area"/></m:Column>
+                <m:Column id="_IDGenColumn245" width="12rem"><m:Text id="_IDGenText464" text="WBS Element"/></m:Column>
+                <m:Column id="_IDGenColumnd24" width="12rem"><m:Text id="_IDGenTextd46" text="Business Area"/></m:Column>
+                <m:Column id="_IDGenColumn24v" width="12rem"><m:Text id="_IDGenTevxt46" text="Commitment Item"/></m:Column>
+
             </m:columns>
 
             <m:items>
@@ -617,10 +638,16 @@ xmlns:plugins="sap.m.plugins"
                         <m:Text id="_IDGenText50" text="100,000.00"/>
                         <m:Text id="_IDGenText51" text="Approved"/>
                         <m:Text id="_IDGenText52" text="Completed"/>
-                        <m:Text id="_IDGenText53" text="600200"/>
                         <m:Text id="_IDGenText54" text="FUND_01"/>
                         <m:Text id="_IDGenText55" text="2026-01"/>
                         <m:Text id="_IDGenText56" text="6343200"/>
+                         <m:Text id="_IDGenText4d9" text="13"/>
+                        <m:Text id="_IDGenText5ddu0" text="100,000.00"/>
+                        <m:Text id="_IDGenText5du0" text="Approved"/>
+                        <m:Text id="_IDGenText5h2" text="Completed"/>
+                       <m:Text id="_IDGenTexjt54" text="FUND_01"/>
+                        <m:Text id="_IDGenText5u5" text="2026-01"/>
+                        <m:Text id="_IDGenText5o6" text="6343200"/>
                     </m:cells>
                 </m:ColumnListItem>
             </m:items>
@@ -652,7 +679,10 @@ xmlns:plugins="sap.m.plugins"
                 <m:Column id="_IDGenColumn29" width="14rem"><m:Text id="_IDGenText60" text="Effective Date"/></m:Column>
                 <m:Column id="_IDGenColumn30" width="14rem"><m:Text id="_IDGenText61" text="Payment Method"/></m:Column>
                 <m:Column id="_IDGenColumn31" width="16rem"><m:Text id="_IDGenText62" text="Bank Details"/></m:Column>
-                <m:Column id="_IDGenColumn32" width="14rem"><m:Text id="_IDGenText63" text="House Bank"/></m:Column>
+                <m:Column id="_IDGenColumn32" width="14rem"><m:Text id="_IDGenText643" text="House Bank"/></m:Column>
+                <m:Column id="_IDGenColumn330" width="14rem"><m:Text id="_IDGenText641" text="Business Partner"/></m:Column>
+                <m:Column id="_IDGenColumn311" width="16rem"><m:Text id="_IDGenText642" text="Gross Amount"/></m:Column>
+                <m:Column id="_IDGenColumn322" width="14rem"><m:Text id="_IDGenText63" text="Disbursement Oblig."/></m:Column>
             </m:columns>
 
             <m:items>
@@ -665,6 +695,10 @@ xmlns:plugins="sap.m.plugins"
                         <m:Text id="_IDGenText68" text="Cash"/>
                         <m:Text id="_IDGenText69" text="Standard Bank"/>
                         <m:Text id="_IDGenText70" text="CHASE_01"/>
+                        <m:Text id="_IDGenText712" text="CAR_01"/>
+                        <m:Text id="_IDGenTeaxt70" text="50,000.00"/>
+                        <m:Text id="_IDGenTeaxt7099" text="50,000.00"/>
+                        
                     </m:cells>
                 </m:ColumnListItem>
             </m:items>

@@ -72,3 +72,22 @@
         max-width: 100% !important;
     }
 }
+
+/* Main header layout */
+.customHeaderRow {
+    display: flex !important;
+    flex-wrap: wrap !important;   /* allow wrapping */
+    gap: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Each field block */
+.customHeaderRow > .sapMVBox {
+    flex: 1 1 180px;   /* grow + shrink + minimum width */
+    min-width: 180px;
+}
+
+.sectionContainer {
+    padding: 1rem 1rem;   /* top/bottom 2rem, left/right 1.5rem */
+}
